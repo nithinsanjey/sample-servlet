@@ -1,0 +1,21 @@
+# folders
+.settings/
+build/
+
+# some . files
+.classpath
+.project
+
+# Binaries
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
