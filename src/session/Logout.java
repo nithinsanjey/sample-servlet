@@ -11,7 +11,7 @@ public class Logout extends HttpServlet {
 		
 		HttpSession session = req.getSession();
 		session.setAttribute("uname", "");
-		
+		session.invalidate();
 		PrintWriter out;
 		try {
 			out = res.getWriter();
