@@ -3,6 +3,7 @@ package session;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
 public class Logout extends HttpServlet {
@@ -15,9 +16,10 @@ public class Logout extends HttpServlet {
 		PrintWriter out;
 		try {
 			out = res.getWriter();
-			out.println("User logged out successfully. For login go to <a href='index.html'>Login page</a>");
+			out.println("User logged out successfully.");
+			req.getRequestDispatcher("index.html").include(req, res);
 			out.close();
-		} catch (IOException e) {
+		} catch (IOException | ServletException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

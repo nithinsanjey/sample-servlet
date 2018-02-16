@@ -1,8 +1,9 @@
 Create todo list - Done
 Rewrite with ServletContext - Done
-Change login with database
-	Create database structure for user_login
-	Set session accordingly
+Change login with database - Done
+	Create database structure for user_login - Done
+	Set session accordingly - Done
+Set initial login page when already logged in - Done
 Change profile page to Notes taken page
 	Create table for user_notes
 	Create POJO
