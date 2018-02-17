@@ -18,12 +18,12 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>Profile</servlet-name>
-		<servlet-class>session.Profile</servlet-class>
+		<servlet-name>Notes</servlet-name>
+		<servlet-class>session.Notes</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Profile</servlet-name>
-		<url-pattern>/ProfileProcess</url-pattern>
+		<servlet-name>Notes</servlet-name>
+		<url-pattern>/NotesProcess</url-pattern>
 	</servlet-mapping>
 	
 	<context-param>

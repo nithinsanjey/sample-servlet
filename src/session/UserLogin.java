@@ -18,6 +18,6 @@ public class UserLogin {
 	}
 	
 	public boolean validateLogin() {
-		return UserLoginDAO.validateLogin(getUsername(), getPassword());
+		return UserLoginDAO.validateLogin(this.getUsername(), this.getPassword());  // I think this is a better approach to validation, what say? someone?
 	}
 }

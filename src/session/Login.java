@@ -34,6 +34,8 @@ public class Login extends HttpServlet{
 					session.setAttribute("loggedInUser", username);
 					out.println("<h2>Welcome, " + username + "</h2>");
 					req.getRequestDispatcher("welcome.html").include(req, res);
+					res.sendRedirect("NotesProcess");
+					//req.getRequestDispatcher("NotesProcess").forward(req, res);
 				}
 				else {
 					out.println("Login failed");
@@ -44,7 +46,8 @@ public class Login extends HttpServlet{
 				String username = (String) session.getAttribute("loggedInUser");
 				out.println("User already logged in.");
 				out.println("Welcome, " + username);
-				req.getRequestDispatcher("welcome.html").include(req, res);
+				//req.getRequestDispatcher("NotesProcess").forward(req, res);
+				res.sendRedirect("NotesProcess");
 			}
 			out.close();
 		} catch (IOException | ServletException e) {
