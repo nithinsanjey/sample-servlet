@@ -57,4 +57,19 @@ public class UserNotesDAO {
 		return null;
 	}
 	
+	public static int deleteOneUserAllNotes(String username) {
+		Connection con = DBConnection.getConnection();
+		String sql = "DELETE FROM USER_NOTES WHERE USERNAME=?";
+		
+		try {
+			System.out.println("Attempting to : " + sql);
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, username);
+			return ps.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
+	}
 }

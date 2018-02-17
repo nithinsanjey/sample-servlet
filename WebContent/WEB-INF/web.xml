@@ -26,6 +26,15 @@
 		<url-pattern>/NotesProcess</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>DeleteUserNotes</servlet-name>
+		<servlet-class>session.NotesDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserNotes</servlet-name>
+		<url-pattern>/NotesDelete</url-pattern>
+	</servlet-mapping>
+	
 	<context-param>
 		<param-name>MysqlDriver</param-name>
 		<param-value>com.mysql.jdbc.Driver</param-value>

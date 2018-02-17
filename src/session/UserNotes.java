@@ -44,4 +44,7 @@ public class UserNotes {
 		return UserNotesDAO.getAllNotes(username);
 	}
 	
+	public int deleteOneUserAllNotes() {
+		return UserNotesDAO.deleteOneUserAllNotes(username);
+	}
 }

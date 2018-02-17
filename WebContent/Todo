@@ -4,13 +4,13 @@ Change login with database - Done
 	Create database structure for user_login - Done
 	Set session accordingly - Done
 Set initial login page when already logged in - Done
-Change profile page to Notes taken page
+Change profile page to Notes taken page - Done
 	Create table for user_notes - Done
 	Add date, time, datetime column whichever is appropriate - Done | actually created date and time
 	Create POJO - Done
 	Create DAO - Done
 	update servlet - Done
-	Add clear all button to delete all notes
-	make a table to display stuff
-	Display difference in time to track our efficiency
+	Add clear all button to delete all notes - Done
+	make a table to display stuff - Done
+	Display difference in time to track our efficiency - Done
 Change header to have just logout - Done
