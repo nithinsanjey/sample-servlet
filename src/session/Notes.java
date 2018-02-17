@@ -52,7 +52,7 @@ public class Notes extends HttpServlet {
 				out.println("<table><tr><th>Notes</th><th>Date</th><th>Time</th><th>Time diff</th></tr>");
 				for (int i=0; i<allUserNotes.size(); i++) {
 					UserNotes userNote = allUserNotes.get(i);
-					String diff = "Across dates. Cant help it";
+					String diff = "Cant help with this one";
 					if(i+1 < allUserNotes.size()) {
 						UserNotes nextNote = allUserNotes.get(i+1);
 						if(userNote.getDate().compareTo(nextNote.getDate()) == 0) {
