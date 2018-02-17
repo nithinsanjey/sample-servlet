@@ -66,7 +66,7 @@ public class Notes extends HttpServlet {
 							int minutes = (somedif / (60)) % 60;
 							int seconds = (somedif) % 60; 
 							
-							diff = hours + ":" +minutes + ":" + seconds;
+							diff = hours + "h:" +minutes + "m:" + seconds + "s";
 						}
 					}
 					

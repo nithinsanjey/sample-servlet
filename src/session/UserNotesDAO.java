@@ -47,8 +47,6 @@ public class UserNotesDAO {
 				userNotes.setTime(rs.getTime(4));
 				allUserNotes.add(userNotes);
 			}
-			
-			System.out.println(allUserNotes);
 			return allUserNotes;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -62,7 +60,6 @@ public class UserNotesDAO {
 		String sql = "DELETE FROM USER_NOTES WHERE USERNAME=?";
 		
 		try {
-			System.out.println("Attempting to : " + sql);
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, username);
 			return ps.executeUpdate();
