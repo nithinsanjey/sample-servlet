@@ -32,7 +32,7 @@ public class UserNotesDAO {
 	
 	public static List<UserNotes> getAllNotes(String username) {
 		Connection con = DBConnection.getConnection();
-		String sql = "SELECT * FROM USER_NOTES WHERE USERNAME=? ORDER BY TIME DESC";
+		String sql = "SELECT * FROM USER_NOTES WHERE USERNAME=? ORDER BY DATE DESC, TIME DESC";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, username);
