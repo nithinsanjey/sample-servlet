@@ -1,4 +1,6 @@
-package session;
+package session.POJO;
+
+import session.DAO.UserLoginDAO;
 
 public class UserLogin {
 	String username;

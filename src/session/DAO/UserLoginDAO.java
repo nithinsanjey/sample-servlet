@@ -1,4 +1,4 @@
-package session;
+package session.DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,6 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.servlet.ServletContext;
+
+import session.Util.DBConnection;
+
 
 public class UserLoginDAO {
 	

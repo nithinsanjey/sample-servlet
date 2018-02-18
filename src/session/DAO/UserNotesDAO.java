@@ -1,4 +1,4 @@
-package session;
+package session.DAO;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -8,6 +8,9 @@ import java.sql.SQLException;
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
+
+import session.POJO.UserNotes;
+import session.Util.DBConnection;
 
 public class UserNotesDAO {
 	

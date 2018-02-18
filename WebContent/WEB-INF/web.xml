@@ -1,7 +1,7 @@
 <web-app>
 	<servlet>
 		<servlet-name>Login</servlet-name>
-		<servlet-class>session.Login</servlet-class>
+		<servlet-class>session.Servlets.Login</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Login</servlet-name>
@@ -10,7 +10,7 @@
 	
 	<servlet>
 		<servlet-name>Logout</servlet-name>
-		<servlet-class>session.Logout</servlet-class>
+		<servlet-class>session.Servlets.Logout</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Logout</servlet-name>
@@ -19,7 +19,7 @@
 	
 	<servlet>
 		<servlet-name>Notes</servlet-name>
-		<servlet-class>session.Notes</servlet-class>
+		<servlet-class>session.Servlets.Notes</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Notes</servlet-name>
@@ -28,7 +28,7 @@
 	
 	<servlet>
 		<servlet-name>DeleteUserNotes</servlet-name>
-		<servlet-class>session.NotesDelete</servlet-class>
+		<servlet-class>session.Servlets.NotesDelete</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DeleteUserNotes</servlet-name>

@@ -1,8 +1,10 @@
-package session;
+package session.POJO;
 
 import java.sql.Date;
 import java.sql.Time;
 import java.util.List;
+
+import session.DAO.UserNotesDAO;
 
 public class UserNotes {
 	
