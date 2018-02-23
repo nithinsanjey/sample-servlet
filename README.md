@@ -4,7 +4,7 @@ IDE used - Eclipse
 
 Create a new Dynamic web project and clone this repo into it.
 
-JDK - 1.8.0_161
+JDK - 1.8.0_161 (Should work with slightly lower version of JDKs as well)
 
 Database used - MySQL57
 
