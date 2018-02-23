@@ -1,7 +1,8 @@
 # sample-servlet
 
 IDE used - Eclipse
-Create a dynamic web project and clone this repo into it.
+
+Create a new Dynamic web project and clone this repo into it.
 
 JDK - 1.8.0_161
 
