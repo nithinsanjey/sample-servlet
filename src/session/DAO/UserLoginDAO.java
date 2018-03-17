@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import javax.servlet.ServletContext;
-
 import session.Util.DBConnection;
 
 
@@ -16,7 +14,7 @@ public class UserLoginDAO {
 	public static boolean validateLogin(String username, String password) {
 		Connection con = DBConnection.getConnection();
 		
-		String sql = "SELECT * FROM USER_LOGIN WHERE USERNAME=? AND PASSWORD=?";
+		String sql = "SELECT * FROM user_login WHERE username=? AND password=?";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, username);

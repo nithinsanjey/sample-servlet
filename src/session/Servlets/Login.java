@@ -3,9 +3,11 @@ package session.Servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import session.POJO.UserLogin;
 import session.Util.ApplicationContext;
@@ -46,7 +48,9 @@ public class Login extends HttpServlet{
 				res.sendRedirect("NotesProcess");
 			}
 			out.close();
-		} catch (IOException | ServletException e) {
+		} catch (IOException  e) {
+			e.printStackTrace();
+		} catch (ServletException e) {
 			e.printStackTrace();
 		}
 	}
