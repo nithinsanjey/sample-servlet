@@ -19,8 +19,10 @@ public class Logout extends HttpServlet {
 			out.println("User logged out successfully.");
 			req.getRequestDispatcher("index.html").include(req, res);
 			out.close();
-		} catch (IOException | ServletException e) {
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ServletException e) {
 			e.printStackTrace();
 		}
 		

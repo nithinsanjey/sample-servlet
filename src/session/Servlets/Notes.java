@@ -29,7 +29,7 @@ public class Notes extends HttpServlet {
 			} 
 			else {
 				String notes = req.getParameter("notes");
-				if(notes != null) {
+				if(notes != null && notes.length()>0) {
 					java.util.Date utilDate = new java.util.Date();
 				    java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
 					Time time = new Time(utilDate.getHours(), utilDate.getMinutes(), utilDate.getSeconds());
@@ -78,7 +78,9 @@ public class Notes extends HttpServlet {
 				}
 				out.println("</table>");
 			}
-		} catch (IOException | ServletException e) {
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ServletException e) {
 			e.printStackTrace();
 		}
 	}
