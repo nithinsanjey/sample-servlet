@@ -16,7 +16,7 @@ public class UserNotesDAO {
 	
 	public static int saveNote(String username, String notes, Date date, Time time) {
 		Connection con = DBConnection.getConnection();
-		String sql = "INSERT INTO USER_NOTES VALUES (?, ?, ?, ?)";
+		String sql = "INSERT INTO user_notes VALUES (?, ?, ?, ?)";
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -35,13 +35,13 @@ public class UserNotesDAO {
 	
 	public static List<UserNotes> getAllNotes(String username) {
 		Connection con = DBConnection.getConnection();
-		String sql = "SELECT * FROM USER_NOTES WHERE USERNAME=? ORDER BY DATE DESC, TIME DESC";
+		String sql = "SELECT * FROM user_notes WHERE username=? ORDER BY date DESC, time DESC";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, username);
 			
 			ResultSet rs = ps.executeQuery();
-			List<UserNotes> allUserNotes = new ArrayList<>();
+			List<UserNotes> allUserNotes = new ArrayList<UserNotes>();
 			while (rs.next()) {
 				UserNotes userNotes = new UserNotes();
 				userNotes.setUsername(rs.getString(1));
@@ -60,7 +60,7 @@ public class UserNotesDAO {
 	
 	public static int deleteOneUserAllNotes(String username) {
 		Connection con = DBConnection.getConnection();
-		String sql = "DELETE FROM USER_NOTES WHERE USERNAME=?";
+		String sql = "DELETE FROM user_notes WHERE username=?";
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
