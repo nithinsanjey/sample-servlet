@@ -1,4 +1,4 @@
-# sample-servlet
+# time-logger
 
 IDE used - Eclipse
 
